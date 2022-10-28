@@ -28,6 +28,7 @@ steps:
         
   - id: "Create Cloud Deploy Release"
     name: "gcr.io/cloud-builders/gcloud:latest"
+    dir: backend
     entrypoint: /bin/bash
     args:
       - "-xe"
