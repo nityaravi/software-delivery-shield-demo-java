@@ -34,7 +34,7 @@ steps:
       - "-xe"
       - "-c"
       - |
-        gcloud deploy releases create backend-release-${SHORT_SHA} \
+        gcloud deploy releases create backend-release-1234 \
           --substitutions SHORT_SHA=1234
           --region $_REGION \
           --delivery-pipeline=cloudrun-guestbook-backend-delivery \
