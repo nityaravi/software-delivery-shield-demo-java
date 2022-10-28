@@ -45,6 +45,7 @@ images:
 
 substitutions:
   _BACKEND_IMAGE: 'us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend:quickstart'
+  _REGION: 'us-central1'
 
 options:
   dynamic_substitutions: true
