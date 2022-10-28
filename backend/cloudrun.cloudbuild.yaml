@@ -34,7 +34,7 @@ steps:
       - "-xe"
       - "-c"
       - |
-        gcloud deploy releases create backend-release-${BUILD_ID} \
+        gcloud deploy releases create backend-release-$BUILD_ID \
           --region $_REGION \
           --delivery-pipeline=cloudrun-guestbook-backend-delivery \
           --skaffold-file=cloudrun.skaffold.yaml \
