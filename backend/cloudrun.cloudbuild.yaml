@@ -18,6 +18,7 @@ steps:
 
   - id: "Build and Push Container Image: Backend"
     name: "gcr.io/cloud-builders/docker"
+    dir: backend
     entrypoint: "/bin/bash"
     args:
       - "-c"
