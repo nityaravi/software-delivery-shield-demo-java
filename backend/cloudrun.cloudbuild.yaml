@@ -34,7 +34,8 @@ steps:
       - "-xe"
       - "-c"
       - |
-        gcloud deploy releases create backend-release-$RANDOM \
+        gcloud deploy releases create backend-release-${SHORT_SHA} \
+          --substitutions SHORT_SHA=1234
           --region $_REGION \
           --delivery-pipeline=cloudrun-guestbook-backend-delivery \
           --skaffold-file=cloudrun.skaffold.yaml \
