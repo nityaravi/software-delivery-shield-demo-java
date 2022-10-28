@@ -80,7 +80,7 @@
         <version>3.3.0</version>
         <configuration>
           <to>
-            <image>us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend:jib</image>
+            <image>us-central1-docker.pkg.dev/sds-docs-project/containers/java-guestbook-backend:jib</image>
           </to>
         </configuration>
       </plugin>
