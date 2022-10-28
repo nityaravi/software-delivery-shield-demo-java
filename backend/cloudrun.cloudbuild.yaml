@@ -37,7 +37,7 @@ steps:
         gcloud deploy releases create backend-release-${SHORT_SHA} \
           --region $_REGION \
           --delivery-pipeline=cloudrun-guestbook-backend-delivery \
-          --skaffold-file=./backend/cloudrun.skaffold.yaml \
+          --skaffold-file=cloudrun.skaffold.yaml \
           --images=java-guestbook-backend=$_BACKEND_IMAGE:${SHORT_SHA}
           
 images:
